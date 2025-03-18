@@ -1,0 +1,116 @@
+/* Custom styles to match the design */
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+.insurance-types-section {
+     background-color: #FFF2EB;
+}
+
+.pol-bg {
+    background-color: #FFFFFF;
+}
+
+.pol-img img {
+    width: 80%;
+}
+
+.header-top {
+    background: #F8F6F6;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.header-top a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.header-main {
+    background: linear-gradient(to right, #f04e23, #f79d30);
+    padding: 10px 0;
+    color: white;
+}
+
+.header-main .nav-link {
+    color: white !important;
+    font-size: 16px;
+}
+
+.header-main .btn-outline-light {
+    border-color: white;
+    color: white;
+}
+
+.main-section {
+    background-color: white;
+}
+
+.main-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main-section .badge.bg-orange {
+    background-color: #f04e23 !important;
+    font-size: 12px;
+}
+
+.main-section .card {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-orange {
+    background-color: #f04e23;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-orange:hover {
+    background-color: #d9441f;
+}
+
+.btn-outline-orange {
+    border-color: #f04e23;
+    color: #f04e23;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.btn-outline-orange:hover {
+    background-color: #f04e23;
+    color: white;
+}
+
+.text-orange {
+    color: #f04e23;
+}
+
+.why-section {
+    background-color: #f8f9fa;
+}
+
+.why-section .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.why-section h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.why-section p {
+    font-size: 14px;
+}
