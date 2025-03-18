@@ -23,7 +23,7 @@
     <!-- Header -->
     <header class="header-top sticky-top">
       <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-items-center mb-3">
           <div class="col-md-6 d-flex">
             <div class="col-auto border-end border-dark  ps-3">
               <img src="./assets/Group (2).png" />
@@ -40,67 +40,46 @@
           </div>
 
           <div class="col-md-6 text-md-end">
-            <div class="dropdown d-inline-block">
-              <a
-                class="text-black dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-              >
-                Renewals
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </div>
-            <div class="dropdown d-inline-block">
-              <a
-                class="text-black dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-              >
-                Support
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </div>
-            <div class="dropdown d-inline-block">
-              <a
-                class="text-black dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-              >
-                Info Centre
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
-            </div>
-            <div class="dropdown d-inline-block">
-              <a
-                class="text-black dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-              >
-                Investor Relations
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Option 1</a></li>
-                <li><a class="dropdown-item" href="#">Option 2</a></li>
-              </ul>
+            <div class="d-flex justify-content-end gap-3">
+              <div class="dropdown">
+                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                  Renewals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                  Support
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                  Info Centre
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                  Investor Relations
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Option 1</a></li>
+                  <li><a class="dropdown-item" href="#">Option 2</a></li>
+                </ul>
+              </div>
             </div>
           </div>
+          
         </div>
       </div>
       <div class="header-main">
@@ -109,17 +88,18 @@
             <img
               src="./assets/Group 53.png"
               alt="ICICI Lombard Logo"
-              class
+              class="me-5"
               ml-5
             />
             <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
               <div class="navbar-nav">
                 <a class="nav-link text-white" href="#">Car Insurance</a>
                 <a class="nav-link text-white" href="#"
@@ -128,8 +108,8 @@
                 <a class="nav-link text-white" href="#">Health Insurance</a>
                 <a class="nav-link text-white" href="#">Other Insurance</a>
                 <a class="nav-link text-white" href="#">Claims</a>
-                <a href="#" class="btn btn-outline-light m-auto">Login</a>
               </div>
+              <a href="#" class="btn btn-outline-light ms-auto">Login</a>
             </div>
           </div>
         </nav>
@@ -208,7 +188,7 @@
                 </div>
               </form>
             </div>
-            <div class="text-end mt-3">
+            <div class="text-center">
               <a href="#" class="btn btn-outline-orange"
                 >Renew your ICICI Lombard policy</a
               >
@@ -220,52 +200,52 @@
 
     <!-- Why Customers Love Us -->
     <section class="why-section py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Why our customers love us?</h2>
-        <p class="text-center text-muted mb-5">And, we think you will too.</p>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card p-4 text-center">
-              <img
-                src="./assets/location.png"
-                alt="Icon"
-                class="mx-auto mb-3"
-              />
-              <h5>6100+ cashless garages</h5>
-              <p class="text-muted">for a hassle-free service</p>
+        <div class="container">
+          <h2 class="text-center mb-4">Why our customers love us?</h2>
+          <p class="text-center text-muted mb-5">And, we think you will too.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card p-4 text-center d-flex align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./assets/location.png" alt="Icon" width="30" height="30" />
+                  <div>
+                    <h5 class="mb-0 text-orange small">6100+ cashless garages</h5>
+                    <span class="text-muted small">for a hassle-free service</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card p-4 text-center">
-              <img
-                src="./assets/instant motor_icn.png"
-                alt="Icon"
-                class="mx-auto mb-3"
-              />
-              <h5>Instant motor claims</h5>
-              <p class="text-muted">through our IL Take Care app</p>
+            <div class="col-md-4">
+              <div class="card p-4 text-center d-flex align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./assets/instant motor_icn.png" alt="Icon" width="30" height="30" />
+                  <div>
+                    <h5 class="mb-0 text-orange small">Instant motor claims</h5>
+                    <span class="text-muted small">through our IL Take Care app</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card p-4 text-center">
-              <img
-                src="./assets/customer support.png"
-                alt="Icon"
-                class="mx-auto mb-3"
-              />
-              <h5>Reliable customer support</h5>
-              <p class="text-muted">Call centre • Mail • 265 branches</p>
+            <div class="col-md-4">
+              <div class="card p-4 text-center d-flex align-items-center">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./assets/customer support.png" alt="Icon" width="30" height="30" />
+                  <div>
+                    <h5 class="mb-0 text-orange small">Reliable customer support</h5>
+                    <span class="text-muted small">Call centre • Mail • 265 branches</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <!-- car insurance  -->
     <section class="ins-section py-5 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="./assets/Group (1).png" />
+            <img src="./assets/Group (1).png" style="width: 100%;" />
           </div>
           <div class="col-lg-6">
             <h2 class="text-center mb-4">What is car insurance?</h2>
