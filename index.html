@@ -18,63 +18,22 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <style>
-        .pol-bg {
-            background-color: #fff;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .pol-img {
-            text-align: center;
-        }
-        .pol-img img {
-            max-width: 100%;
-            height: auto;
-        }
-        .text-muted {
-            color: #6c757d !important;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #ff6200;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            background-size: 50% 50%;
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        @media (max-width: 991.98px) {
-            .pol-img,
-            .col-lg-8 {
-                text-align: center;
-            }
-            .pol-img img {
-                margin-bottom: 15px;
-            }
-        }
-    </style>
   </head>
   <body>
     <!-- Header -->
     <header class="header-top sticky-top">
       <div class="container-fluid">
         <div class="row align-items-center mb-3">
-          <div class="col-md-6 d-flex">
-            <div class="col-auto border-end border-dark  ps-3">
+          <div class="col-md-6 d-flex mb-3 mb-lg-0">
+            <div class="col-auto border-end border-dark ps-3">
               <img src="./assets/Group (2).png" />
               <a href="" class="text-black">1800 2666</a>
             </div>
-            <div class="col-auto border-end border-dark  ps-3">
+            <div class="col-auto border-end border-dark ps-3">
               <img src="./assets/Fill 1.png" />
               <a href="#" class="text-black">Call Back</a>
             </div>
-            <div class="col-auto border-end border-dark  ps-3">
+            <div class="col-auto border-end border-dark ps-3">
               <img src="./assets/Oval.png" />
               <a href="#" class="text-black">Live Chat</a>
             </div>
@@ -83,7 +42,13 @@
           <div class="col-md-6 text-md-end">
             <div class="d-flex justify-content-end gap-3">
               <div class="dropdown">
-                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                <a
+                  class="text-black dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                >
                   Renewals
                 </a>
                 <ul class="dropdown-menu">
@@ -92,7 +57,13 @@
                 </ul>
               </div>
               <div class="dropdown">
-                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                <a
+                  class="text-black dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                >
                   Support
                 </a>
                 <ul class="dropdown-menu">
@@ -101,7 +72,13 @@
                 </ul>
               </div>
               <div class="dropdown">
-                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                <a
+                  class="text-black dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                >
                   Info Centre
                 </a>
                 <ul class="dropdown-menu">
@@ -110,7 +87,13 @@
                 </ul>
               </div>
               <div class="dropdown">
-                <a class="text-black dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                <a
+                  class="text-black dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                >
                   Investor Relations
                 </a>
                 <ul class="dropdown-menu">
@@ -120,7 +103,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
       <div class="header-main">
@@ -133,14 +115,14 @@
               ml-5
             />
             <button
-              class="navbar-toggler"
+              class="navbar-toggler shadow-none border-0"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link text-white" href="#">Car Insurance</a>
                 <a class="nav-link text-white" href="#"
@@ -160,7 +142,7 @@
     <section class="main-section py-5">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <h1 class="display-4 fw-bold">Car Insurance</h1>
             <h2 class="h3 mb-3">Prices starting at just ₹2,094/yr</h2>
             <p class="text-muted small">
@@ -184,14 +166,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <img
               src="./assets/Car.png"
               alt="Car Image"
               class="img-fluid mt-4"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="card p-4">
               <form>
                 <div class="mb-3">
@@ -241,52 +223,75 @@
 
     <!-- Why Customers Love Us -->
     <section class="why-section py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center mb-4">Why our customers love us?</h2>
-          <p class="text-center text-muted mb-5">And, we think you will too.</p>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card p-4 text-center d-flex align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                  <img src="./assets/location.png" alt="Icon" width="30" height="30" />
-                  <div>
-                    <h5 class="mb-0 text-orange small">6100+ cashless garages</h5>
-                    <span class="text-muted small">for a hassle-free service</span>
-                  </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Why our customers love us?</h2>
+        <p class="text-center text-muted mb-5">And, we think you will too.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-4 text-center d-flex align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="./assets/location.png"
+                  alt="Icon"
+                  width="30"
+                  height="30"
+                />
+                <div>
+                  <h5 class="mb-0 text-orange small">6100+ cashless garages</h5>
+                  <span class="text-muted small"
+                    >for a hassle-free service</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card p-4 text-center d-flex align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                  <img src="./assets/instant motor_icn.png" alt="Icon" width="30" height="30" />
-                  <div>
-                    <h5 class="mb-0 text-orange small">Instant motor claims</h5>
-                    <span class="text-muted small">through our IL Take Care app</span>
-                  </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 text-center d-flex align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="./assets/instant motor_icn.png"
+                  alt="Icon"
+                  width="30"
+                  height="30"
+                />
+                <div>
+                  <h5 class="mb-0 text-orange small">Instant motor claims</h5>
+                  <span class="text-muted small"
+                    >through our IL Take Care app</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card p-4 text-center d-flex align-items-center">
-                <div class="d-flex align-items-center gap-2">
-                  <img src="./assets/customer support.png" alt="Icon" width="30" height="30" />
-                  <div>
-                    <h5 class="mb-0 text-orange small">Reliable customer support</h5>
-                    <span class="text-muted small">Call centre • Mail • 265 branches</span>
-                  </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-4 text-center d-flex align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <img
+                  src="./assets/customer support.png"
+                  alt="Icon"
+                  width="30"
+                  height="30"
+                />
+                <div>
+                  <h5 class="mb-0 text-orange small">
+                    Reliable customer support
+                  </h5>
+                  <span class="text-muted small"
+                    >Call centre • Mail • 265 branches</span
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <!-- car insurance  -->
     <section class="ins-section py-5 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <img src="./assets/Group (1).png" style="width: 100%;" />
+            <img src="./assets/Group (1).png" style="width: 100%" />
           </div>
           <div class="col-lg-6">
             <h2 class="text-center mb-4">What is car insurance?</h2>
@@ -312,57 +317,299 @@
     </section>
 
     <!-- policy section -->
-   <section class="insurance-types-section py-5" style="background-color: #fff5e6;">
-        <div class="container">
-            <h2 class="mb-4 text-center">
-                What are the different types of car insurance policies?
-            </h2>
-            <div class="row pol-bg align-items-center">
-                <div class="col-lg-4 pol-img">
-                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/Clip path group.svg" alt="Car Image" class="img-fluid mt-3">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+    <section
+      class="insurance-types-section py-5"
+      style="background-color: #fff5e6"
+    >
+      <div class="container">
+        <h2 class="mb-4 text-center">
+          What are the different types of car insurance policies?
+        </h2>
+        <div class="row pol-bg align-items-center">
+          <div class="col-lg-4 pol-img">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/Clip path group.svg"
+                    alt="Car Image"
+                    class="img-fluid mt-3"
+                  />
                 </div>
-                <div class="col-lg-8">
-                    <h3 class="h5 mb-3">Comprehensive car insurance policy</h3>
-                    <p class="text-muted">
-                        Comprehensive car insurance, also known as a private car
-                        package policy, is a type of auto insurance that provides
-                        complete coverage for your vehicle. It is an optional car
-                        insurance policy but is highly recommended for car owners
-                        who want the best protection for their four-wheelers.
-                    </p>
-                    <p class="text-muted">
-                        Comprehensive car insurance covers damage caused by natural
-                        disasters, accidents, theft, fire, and other such incidents.
-                        It covers damages to both your vehicle and third-party
-                        vehicles and property. This car insurance policy also covers
-                        third-party liabilities, which will cover any legal costs or
-                        compensation you may be liable for in case of an accident
-                        caused due to your fault. In addition, some comprehensive
-                        policies also offer additional benefits such as roadside
-                        assistance, towing service and more. Even though
-                        comprehensive insurance policies tend to be more expensive
-                        than Third-Party Liability or Standalone Own Damage
-                        policies, they offer broader coverage.
-                    </p>
-                </div>
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
             </div>
+          </div>
+          <div class="col-lg-8">
+            <h3 class="h5 mb-3">Comprehensive car insurance policy</h3>
+            <p class="text-muted">
+              Comprehensive car insurance, also known as a private car package
+              policy, is a type of auto insurance that provides complete
+              coverage for your vehicle. It is an optional car insurance policy
+              but is highly recommended for car owners who want the best
+              protection for their four-wheelers.
+            </p>
+            <p class="text-muted">
+              Comprehensive car insurance covers damage caused by natural
+              disasters, accidents, theft, fire, and other such incidents. It
+              covers damages to both your vehicle and third-party vehicles and
+              property. This car insurance policy also covers third-party
+              liabilities, which will cover any legal costs or compensation you
+              may be liable for in case of an accident caused due to your fault.
+              In addition, some comprehensive policies also offer additional
+              benefits such as roadside assistance, towing service and more.
+              Even though comprehensive insurance policies tend to be more
+              expensive than Third-Party Liability or Standalone Own Damage
+              policies, they offer broader coverage.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Bootstrap JS -->
+
+    <!-- content section -->
+    <section
+      class="insurance-comparison-section py-5"
+      style="background-color: #f9f9f9"
+    >
+      <div class="container">
+        <h2 class="text-center mb-4">
+          Comprehensive car insurance vs Third-party car insurance
+        </h2>
+        <div class="comparison-card p-4">
+          <table class="comparison-table table table-bordered">
+            <thead>
+              <tr>
+                <th>Comprehensive Car Insurance</th>
+                <th>Third-Party Car Insurance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Covers damages to your own car and third-party liabilities
+                </td>
+                <td>Covers third-party liabilities only</td>
+              </tr>
+              <tr>
+                <td>Provides complete protection for your car</td>
+                <td>Only covers legal liabilities</td>
+              </tr>
+              <tr>
+                <td>
+                  May include add-ons like zero depreciation, roadside
+                  assistance, etc.
+                </td>
+                <td>Only includes mandatory third-party coverage as per law</td>
+              </tr>
+              <tr>
+                <td>Higher premium as compared to third-party insurance</td>
+                <td>Lower premium as compared to comprehensive insurance</td>
+              </tr>
+              <tr>
+                <td>Can be purchased online or offline</td>
+                <td>
+                  Mandatorily needs to be purchased before registering a car
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="description mt-4">
+            Comprehensive car insurance is a more comprehensive policy that
+            covers not only third-party liabilities but also damage to your own
+            vehicle. On the other hand, third-party car insurance only covers
+            legal liabilities in case of an accident. Comprehensive car
+            insurance also offers add-ons like zero depreciation and roadside
+            assistance, whereas third-party insurance only includes mandatory
+            coverage as per law.
+          </p>
+          <p class="description">
+            Comprehensive car insurance has a higher premium as compared to
+            third-party insurance, but it provides complete protection for your
+            car. The choice between the two depends on your budget and the level
+            of coverage you desire. You can easily buy car insurance online or
+            offline, but third-party insurance is mandatory and needs to be
+            purchased before registering a car.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- policy card section -->
+    <section
+      class="insurance-guide-section py-5"
+      style="background-color: #1e3a8a"
+    >
+      <div class="container">
+        <h2 class="text-center mb-5 text-white">
+          How to choose the right car insurance policy online?
+        </h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="guide-card p-4 text-center">
+              <h3 class="text-orange mb-3">1</h3>
+              <h4 class="text-white mb-2">What kind of coverage you need:</h4>
+              <p class="text-white">
+                Choose from options like liability, collision, comprehensive, or
+                personal injury protection.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="guide-card p-4 text-center">
+              <h3 class="text-orange mb-3">2</h3>
+              <h4 class="text-white mb-2">How much your car is worth:</h4>
+              <p class="text-white">
+                Make sure the cost of your insurance policy matches your
+                vehicle's value.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="guide-card p-4 text-center">
+              <h3 class="text-orange mb-3">3</h3>
+              <h4 class="text-white mb-2">How you drive:</h4>
+              <p class="text-white">
+                Your driving habits, such as how often you drive and what type
+                of driving you do, can affect the cost of the insurance if you
+                opt for pay-as-you-drive or pay-how-you-drive policies.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="guide-card p-4 text-center">
+              <h3 class="text-orange mb-3">4</h3>
+              <h4 class="text-white mb-2">
+                How much you're willing to pay out of pocket:
+              </h4>
+              <p class="text-white">
+                Think about your budget and how much risk you're comfortable
+                with. In case of an accident, if you're not comfortable spending
+                money from your own pocket for your car repairs, opt for the Own
+                Damage cover instead of a Third-party policy.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="guide-card p-4 text-center">
+              <h3 class="text-orange mb-3">5</h3>
+              <h4 class="text-white mb-2">Where you live:</h4>
+              <p class="text-white">
+                Car insurance online costs can differ based on traffic and crime
+                in your area.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="guide-card p-4 text-center">
+              <h3 class="text-orange mb-3">6</h3>
+              <h4 class="text-white mb-2">Discounts:</h4>
+              <p class="text-white">
+                Look for discounts you might be eligible for, such as discounts
+                for having multiple policies, being a safe driver, or driving
+                less.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="text-white text-center mt-5">
+          Before buying car insurance online, read the policy details and fine
+          print, and ask questions to clarify anything you need help
+          understanding. Regularly reviewing your car insurance policy can help
+          ensure that it continues to meet your needs and that you're not
+          overpaying for coverage you don't need.
+        </p>
+      </div>
+    </section>
+
+    <!-- policy tab -->
+    <section class="insurance-tips-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          Things to keep in mind while buying a car insurance policy
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-5 d-flex flex-row p-3 card mb-3 mb-lg-0">
+            <div>
+              <img src="./assets/policy coverage_icn.png" />
+            </div>
+            <div>
+              <h2>Policy coverage</h2>
+              <p>
+                Check the policy inclusions and exclusions thoroughly to know
+                what’s covered and what’s not. Choose the right type of policy &
+                coverage to ensure that you are well protected at the time of
+                claim.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 d-flex flex-row p-3 card">
+            <div><img src="./assets/add ons icn.png" /></div>
+            <div>
+              <h2>Add-ons</h2>
+              <p>
+                Add-ons come with great benefits at a nominal extra charge and
+                each one of them serves a specific purpose. Evaluate them
+                closely and pick the ones you need to cover your car against
+                accidental damages reasonably.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-5 d-flex flex-row p-3 card mb-3 mb-lg-0">
+            <div><img src="./assets/service benefits icn.png" /></div>
+            <div>
+              <h2>Service benefits</h2>
+              <p>
+                Availability of cashless garages, easy claims process and
+                reliable customer support are a must.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 d-flex flex-row p-3 card">
+            <div><img src="./assets/right insured_icn.png" /></div>
+            <div>
+              <h2>Right Insured Declared Value (IDV)</h2>
+              <p>
+                While you can save on premium by choosing a lower IDV, it will
+                serve you good at the time of claim if you get an IDV close to
+                your car’s market value while buying the policy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
