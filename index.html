@@ -18,6 +18,10 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -143,7 +147,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4">
-            <h1 class="display-4 fw-bold">Car Insurance</h1>
+            <h1 class="display-4 fw-bold" style="color: black;">>Car Insurance</h1>
             <h2 class="h3 mb-3">Prices starting at just ₹2,094/yr</h2>
             <p class="text-muted small">
               This amount refers to the TP rates only
@@ -224,7 +228,7 @@
     <!-- Why Customers Love Us -->
     <section class="why-section py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Why our customers love us?</h2>
+        <h2 class="text-center mb-4 text-black">Why our customers love us?</h2>
         <p class="text-center text-muted mb-5">And, we think you will too.</p>
         <div class="row">
           <div class="col-md-4">
@@ -294,7 +298,7 @@
             <img src="./assets/Group (1).png" style="width: 100%" />
           </div>
           <div class="col-lg-6">
-            <h2 class="text-center mb-4">What is car insurance?</h2>
+            <h2 class="text-center mb-4 text-black">What is car insurance?</h2>
             <p class="text-center text-muted mb-5">
               A comprehensive car insurance policy, also known as motor package
               insurance, saves you money when your car is damaged in an accident
@@ -321,75 +325,63 @@
       class="insurance-types-section py-5"
       style="background-color: #fff5e6"
     >
-      <div class="container">
-        <h2 class="mb-4 text-center">
+      <div class="container position-relative">
+        <h2 class="mb-4 text-center text-black">
           What are the different types of car insurance policies?
         </h2>
-        <div class="row pol-bg align-items-center">
-          <div class="col-lg-4 pol-img">
-            <div
-              id="carouselExample"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/Clip path group.svg"
-                    alt="Car Image"
-                    class="img-fluid mt-3"
-                  />
+        <div class="d-flex align-items-center justify-content-between">
+          <button class="custom-arrow prev-btn" id="prevBtn">
+            <img
+              src="./assets/Group 126.svg"
+              alt="Previous"
+              class="arrow-img"
+            />
+          </button>
+
+          <div
+            class="row pol-bg align-items-center flex-grow-1 p-4 bg-white rounded-3 shadow"
+          >
+            <div class="col-lg-4 pol-img">
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/Clip path group.svg"
+                      alt="Car Image"
+                      class="img-fluid mt-3"
+                    />
+                  </div>
                 </div>
               </div>
-              <!-- <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button> -->
+            </div>
+
+            <div class="col-lg-8">
+              <h3 class="h5 mb-3">Comprehensive car insurance policy</h3>
+              <p class="text-muted">
+                Comprehensive car insurance, also known as a private car package
+                policy, is a type of auto insurance that provides complete
+                coverage for your vehicle. It is an optional car insurance
+                policy but is highly recommended for car owners who want the
+                best protection for their four-wheelers.
+              </p>
+              <p class="text-muted">
+                Comprehensive car insurance covers damage caused by natural
+                disasters, accidents, theft, fire, and other such incidents. It
+                covers damages to both your vehicle and third-party vehicles and
+                property. This car insurance policy also covers third-party
+                liabilities, which will cover any legal costs or compensation
+                you may be liable for in case of an accident caused due to your
+                fault.
+              </p>
             </div>
           </div>
-          <div class="col-lg-8">
-            <h3 class="h5 mb-3">Comprehensive car insurance policy</h3>
-            <p class="text-muted">
-              Comprehensive car insurance, also known as a private car package
-              policy, is a type of auto insurance that provides complete
-              coverage for your vehicle. It is an optional car insurance policy
-              but is highly recommended for car owners who want the best
-              protection for their four-wheelers.
-            </p>
-            <p class="text-muted">
-              Comprehensive car insurance covers damage caused by natural
-              disasters, accidents, theft, fire, and other such incidents. It
-              covers damages to both your vehicle and third-party vehicles and
-              property. This car insurance policy also covers third-party
-              liabilities, which will cover any legal costs or compensation you
-              may be liable for in case of an accident caused due to your fault.
-              In addition, some comprehensive policies also offer additional
-              benefits such as roadside assistance, towing service and more.
-              Even though comprehensive insurance policies tend to be more
-              expensive than Third-Party Liability or Standalone Own Damage
-              policies, they offer broader coverage.
-            </p>
-          </div>
+          <button class="custom-arrow next-btn" id="nextBtn">
+            <img src="./assets/Group 119.svg" alt="Next" class="arrow-img" />
+          </button>
         </div>
       </div>
     </section>
@@ -400,7 +392,7 @@
       style="background-color: #f9f9f9"
     >
       <div class="container">
-        <h2 class="text-center mb-4">
+        <h2 class="text-center mb-4 text-black">
           Comprehensive car insurance vs Third-party car insurance
         </h2>
         <div class="comparison-card p-4">
@@ -549,67 +541,626 @@
       </div>
     </section>
 
-    <!-- policy tab -->
-    <section class="insurance-tips-section py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">
-          Things to keep in mind while buying a car insurance policy
-        </h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-5 d-flex flex-row p-3 card mb-3 mb-lg-0">
+    <!-- included section -->
+    <section class="control-section py-5">
+      <div class="container mt-5">
+        <h2 class="text-center fw-bold">What’s included and what’s not?</h2>
+
+        <!-- Tabs -->
+        <div class="tab-container d-flex text-center mt-4">
+          <a href="#" class="active" onclick="showTab(event, 'inclusions')"
+            >Inclusions</a
+          >
+          <a href="#" onclick="showTab(event, 'exclusions')">Exclusions</a>
+        </div>
+
+        <!-- Inclusions Content -->
+        <div id="inclusions" class="tab-content">
+          <p class="fw-bold">What’s included:</p>
+          <div class="included-list">
             <div>
-              <img src="./assets/policy coverage_icn.png" />
+              <i class="fa-solid fa-circle-check"></i> Coverage for natural
+              disasters like earthquakes, floods, fires and storms
             </div>
             <div>
-              <h2>Policy coverage</h2>
-              <p>
-                Check the policy inclusions and exclusions thoroughly to know
-                what’s covered and what’s not. Choose the right type of policy &
-                coverage to ensure that you are well protected at the time of
-                claim.
-              </p>
+              <i class="fa-solid fa-circle-check"></i> ₹15 lakh Personal
+              Accident Cover
             </div>
-          </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5 d-flex flex-row p-3 card">
-            <div><img src="./assets/add ons icn.png" /></div>
             <div>
-              <h2>Add-ons</h2>
-              <p>
-                Add-ons come with great benefits at a nominal extra charge and
-                each one of them serves a specific purpose. Evaluate them
-                closely and pick the ones you need to cover your car against
-                accidental damages reasonably.
-              </p>
+              <i class="fa-solid fa-circle-check"></i> Cashless repairs in 5100+
+              network garages
+            </div>
+            <div>
+              <i class="fa-solid fa-circle-check"></i> 9 add-ons to choose from
+            </div>
+            <div>
+              <i class="fa-solid fa-circle-check"></i> Coverage for theft,
+              accidents and terrorist activities
+            </div>
+            <div>
+              <i class="fa-solid fa-circle-check"></i> Third-party legal
+              liabilities cover
+            </div>
+            <div>
+              <i class="fa-solid fa-circle-check"></i> No claim bonus up to 50%
+            </div>
+            <div>
+              <i class="fa-solid fa-circle-check"></i> Instant claim settlement
+              via InstaSpect
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-5 d-flex flex-row p-3 card mb-3 mb-lg-0">
-            <div><img src="./assets/service benefits icn.png" /></div>
-            <div>
-              <h2>Service benefits</h2>
-              <p>
-                Availability of cashless garages, easy claims process and
-                reliable customer support are a must.
-              </p>
+
+        <!-- Policy Documents -->
+        <div class="policy-docs">
+          <p class="fw-bold mb-0">Policy documents:</p>
+          <a href="#">Private car package policy wordings</a>
+          <span>|</span>
+          <a href="#"
+            >Stand-alone own damage private</a
+          >
+          <span>|</span>
+          <a href="#">Private car liability policy wording</a>
+        </div>
+      </div>
+    </section>
+    <!-- policy tab -->
+    <section
+      class="insurance-tips-section py-5"
+      style="background-color: #f8f6f6"
+    >
+      <div class="container py-5">
+        <h2 class="text-center mb-4 fw-bold text-black">
+          Things to keep in mind while buying a car insurance policy
+        </h2>
+
+        <div class="row g-4 mt-5">
+          <div class="col-md-6">
+            <div class="custom-card selected d-flex align-items-start">
+              <div class="image-container">
+                <img
+                  src="./assets/policy coverage_icn.png"
+                  alt="Policy Coverage"
+                />
+              </div>
+              <div>
+                <h5 class="fw-bold">Policy coverage</h5>
+                <p class="mb-0">
+                  Check the policy inclusions and exclusions thoroughly to know
+                  what’s covered and what’s not...
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5 d-flex flex-row p-3 card">
-            <div><img src="./assets/right insured_icn.png" /></div>
-            <div>
-              <h2>Right Insured Declared Value (IDV)</h2>
-              <p>
-                While you can save on premium by choosing a lower IDV, it will
-                serve you good at the time of claim if you get an IDV close to
-                your car’s market value while buying the policy.
-              </p>
+
+          <div class="col-md-6">
+            <div class="custom-card d-flex align-items-start">
+              <div class="image-container">
+                <img src="./assets/add ons icn.png" alt="Add-ons" />
+              </div>
+              <div>
+                <h5 class="fw-bold">Add-ons</h5>
+                <p class="mb-0">
+                  Add-ons come with great benefits at a nominal extra charge and
+                  each one serves a specific purpose...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="custom-card d-flex align-items-start">
+              <div class="image-container">
+                <img
+                  src="./assets/service benefits icn.png"
+                  alt="Service Benefits"
+                />
+              </div>
+              <div>
+                <h5 class="fw-bold">Service benefits</h5>
+                <p class="mb-0">
+                  Availability of cashless garages, easy claims process, and
+                  reliable customer support are a must...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="custom-card d-flex align-items-start">
+              <div class="image-container">
+                <img src="./assets/right insured_icn.png" alt="IDV" />
+              </div>
+              <div>
+                <h5 class="fw-bold">Right Insured Declared Value (IDV)</h5>
+                <p class="mb-0">
+                  Choosing the right IDV ensures you get a fair claim amount
+                  close to your car’s market value...
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- question tab -->
+    <section class="question-tab py-5" style="background-color: #f8f6f6">
+      <div class="container py-5">
+        <h2 class="page-title">
+          Get answers to common questions about car insurance policy
+        </h2>
+        <ul class="nav nav-tabs" id="insuranceTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="general-tab"
+              data-bs-toggle="tab"
+              href="#general"
+              role="tab"
+              aria-controls="general"
+              aria-selected="true"
+              >General</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="cover-tab"
+              data-bs-toggle="tab"
+              href="#cover"
+              role="tab"
+              aria-controls="cover"
+              aria-selected="false"
+              >Cover</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="premium-tab"
+              data-bs-toggle="tab"
+              href="#premium"
+              role="tab"
+              aria-controls="premium"
+              aria-selected="false"
+              >Premium</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="claims-tab"
+              data-bs-toggle="tab"
+              href="#claims"
+              role="tab"
+              aria-controls="claims"
+              aria-selected="false"
+              >Claims</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="policy-tab"
+              data-bs-toggle="tab"
+              href="#policy"
+              role="tab"
+              aria-controls="policy"
+              aria-selected="false"
+              >Policy</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="insuranceTabsContent">
+          <div
+            class="tab-pane fade show active"
+            id="general"
+            role="tabpanel"
+            aria-labelledby="general-tab"
+          >
+            <dl>
+              <dt>Why do I need to insure my car?</dt>
+              <dd>
+                In India, third-party car insurance is compulsory for all car
+                owners. Moreover, own-damage car insurance covers you in case of
+                accidents, theft and fire. In case of any untoward incident, you
+                don’t have to pay out of pocket for repairs or replacement if
+                you have a valid policy.
+              </dd>
+
+              <dt>What are the benefits of buying car insurance online?</dt>
+              <dd>
+                When you buy car insurance online, you get an instant policy, as
+                there is no documentation or paperwork involved. You also have
+                the advantage of choosing from multiple payment options, e.g.,
+                credit card (Visa, Master, AMEX card), net banking, debit card
+                etc.
+              </dd>
+
+              <dt>
+                What are the various types of vehicles that I can insure online?
+              </dt>
+              <dd>You can insure a private car and two-wheeler online.</dd>
+
+              <dt>How quickly can I buy/renew car insurance online?</dt>
+              <dd>
+                It takes just a few minutes to buy or renew car insurance
+                online. You just have to enter the vehicle details, contact info
+                and insured details, and pick the covers you need. Once you make
+                the payment, you receive an instant car insurance policy.
+              </dd>
+
+              <dt>Are offline and online car insurance policies the same?</dt>
+              <dd>
+                Yes, they are. In case of online car insurance, once you make
+                payment, we send the policy documents to your email & your
+                registered address.
+              </dd>
+
+              <dt>Where can I check my car insurance policy details?</dt>
+              <dd>
+                You can check all your car insurance details in your policy
+                documents. You can also login to the website or IL Take Care app
+                to check the below details:
+                <ul>
+                  <li>Policy number</li>
+                  <li>Policy start and end date</li>
+                  <li>Policy type (Comprehensive/OD only/TP only)</li>
+                  <li>Engine & chassis number</li>
+                </ul>
+              </dd>
+
+              <dt>What is an endorsement in car insurance?</dt>
+              <dd>
+                An endorsement is a written evidence of an agreed change in the
+                policy. It is a document that incorporates changes in the policy
+                terms.
+              </dd>
+
+              <dt>Do I need a valid PUC to drive in India?</dt>
+              <dd>
+                Yes, you need to hold a valid PUC, and/or fitness certificate,
+                to drive your vehicle and stay compliant with the law.
+              </dd>
+
+              <dt>
+                Do I need to have a valid insurance policy to get my new vehicle
+                registered?
+              </dt>
+              <dd>
+                Yes, you need to have an active and valid insurance policy while
+                registering your new vehicle. Even a valid third party (TP)
+                policy will work for registering your vehicle at the RTO.
+              </dd>
+            </dl>
+          </div>
+
+          <!-- Cover Tab -->
+          <div
+            class="tab-pane fade"
+            id="cover"
+            role="tabpanel"
+            aria-labelledby="cover-tab"
+          >
+            <p>Content for Cover tab will be here.</p>
+          </div>
+
+          <!-- Premium Tab -->
+          <div
+            class="tab-pane fade"
+            id="premium"
+            role="tabpanel"
+            aria-labelledby="premium-tab"
+          >
+            <p>Content for Premium tab will be here.</p>
+          </div>
+
+          <!-- Claims Tab -->
+          <div
+            class="tab-pane fade"
+            id="claims"
+            role="tabpanel"
+            aria-labelledby="claims-tab"
+          >
+            <p>Content for Claims tab will be here.</p>
+          </div>
+
+          <!-- Policy Tab -->
+          <div
+            class="tab-pane fade"
+            id="policy"
+            role="tabpanel"
+            aria-labelledby="policy-tab"
+          >
+            <p>Content for Policy tab will be here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- rating tab -->
+    <section class="rating-tab py-5">
+      <div class="container">
+        <!-- Ratings Header -->
+        <div class="ratings-header">
+          <h2>Ratings and reviews</h2>
+          <div class="d-flex justify-content-center align-items-center mt-3">
+            <div class="d-flex align-items-center">
+              <span class="rating-value">4.6</span>
+              <span class="rating-star">★</span>
+            </div>
+            <div
+              class="mx-3"
+              style="width: 1px; height: 30px; background-color: #ddd"
+            ></div>
+            <div class="reviews-info text-start">
+              Our customers have rated us<br />
+              Based on 496 reviews
+            </div>
+          </div>
+        </div>
+        <div class="row testimonial-area">
+          <div class="col-1 d-flex align-items-center justify-content-center">
+            <div class="nav-arrow nav-prev">
+              <img src="./assets/Group 126.svg" />
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="d-flex">
+              <div class="reviewer-name">Kumar Ambuj</div>
+              <div
+                class="mx-3"
+                style="width: 1px; height: 30px; background-color: #ddd"
+              ></div>
+              <div>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small" style="color: #ddd">★</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              The interaction was good. The customer service associate gave me
+              answers to all my queries. Her presence while making the decision
+              to buy was helpful. I will definitely recommend ICICI Lombard to
+              my friends and family for the way they treat customers.
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="d-flex">
+              <div class="reviewer-name">Sanjay Achliya</div>
+              <div
+                class="mx-3"
+                style="width: 1px; height: 30px; background-color: #ddd"
+              ></div>
+              <div>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small rating-star">★</span>
+                <span class="star-small" style="color: #ddd">★</span>
+                <span class="star-small" style="color: #ddd">★</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              Very good experience. The agent gave me all the information
+              clearly and didn't mind repeating certain points until I
+              understood. I don't fully get technology, but she offered to take
+              care of the whole process of buying the car insurance policy
+              without any hassle.
+              <br />I am truly thankful.
+            </p>
+          </div>
+
+          <div class="col-1 d-flex align-items-center justify-content-center">
+            <div class="nav-arrow nav-next">
+              <img src="./assets/Group 119.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="pagination-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+        <div class="text-center">
+          <button class="read-all-btn">Read all reviews</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular search -->
+    <section class="popular-searches py-1" style="background-color: #f8f6f6">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center illustration">
+            <img src="assets/Group new.png" alt="Search Illustration" />
+          </div>
+
+          <div class="col-md-8">
+            <h2 class="fw-bold">Popular Searches</h2>
+            <div class="search-tags mt-3">
+              <span class="search-tag active">Health Insurance</span>
+              <span class="search-tag">Bike Insurance</span>
+              <span class="search-tag">Travel Insurance</span>
+              <span class="search-tag">Vehicle Insurance</span>
+              <span class="search-tag">Car Insurance Blogs</span>
+              <span class="search-tag">Zero Depreciation Car Insurance</span>
+              <span class="search-tag">Car Insurance Calculator</span>
+              <span class="search-tag">Comprehensive Car Insurance</span>
+              <span class="search-tag">Roadside Assistance</span>
+              <span class="search-tag">Engine Protect Car Insurance</span>
+              <span class="search-tag">Third-Party Car Insurance</span>
+              <span class="search-tag">Cashless Car Insurance</span>
+              <span class="search-tag">Model-based Car Insurance</span>
+              <span class="search-tag">Car Insurance in Ahmedabad</span>
+              <span class="search-tag">Car Insurance in Jaipur</span>
+              <span class="search-tag">Car Insurance Coverage</span>
+              <span class="search-tag">Second-Hand Car Insurance</span>
+              <span class="search-tag">Car Insurance in Nashik</span>
+              <span class="search-tag">Consumable Car Insurance</span>
+              <span class="search-tag">IDV in Car Insurance</span>
+              <span class="search-tag">Car Insurance in Gurgaon</span>
+              <span class="search-tag">No Claim Bonus in Car Insurance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- car tab -->
+     <section class="car-tab py-5" style="background-color: #00305B;">
+      <div class="container py-5" >
+        <h2 class="text-center ">Car Insurance for Popular Models in India</h2>
+        <div class="row mt-4 g-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/Maruti_Suzuki_Swift_Dzire 1 (1).png" alt="Maruti Baleno">
+                    <span>Maruti Baleno Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/Maruti_Ertiga 1.png" alt="Maruti Ertiga">
+                    <span>Maruti Ertiga Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/Maruti_Suzuki_Alto 1 (1).png" alt="Maruti Alto">
+                    <span>Maruti Alto Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/il_designteam_High-quality_image_of_a_Hyundai_Creta_in_Robust_c_1cfb2d2f-d4d8-4f2f-be52-f5f70dda38d2-removebg (1).png" alt="Hyundai Creta">
+                    <span>Hyundai Creta Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/Maruti_Suzuki_Alto 1.png" alt="Maruti Alto">
+                    <span>Maruti Alto Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/il_designteam_High-quality_image_of_a_Hyundai_Creta_in_Robust_c_1cfb2d2f-d4d8-4f2f-be52-f5f70dda38d2-removebg.png" alt="Hyundai Eon">
+                    <span>Hyundai Eon Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/il_designteam_High-quality_image_of_a_Hyundai_EON_in_Pristine_b_40ec0f14-04ff-4e78-a608-f527866e0db1-removebg.png" alt="Hyundai Creta">
+                    <span>Hyundai Creta Car Insurance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="insurance-card">
+                    <img src="./assets/Maruti_Suzuki_Alto 1.png" alt="Maruti Baleno">
+                    <span>Maruti Baleno Car Insurance</span>
+                </div>
+            </div>
+        </div>
+    </div>
+     </section>
+    <!-- table section -->
+    <section class="table-section py-3">
+      <div class="container">
+        <div class="table-responsive"> <!-- Enables scrolling on small screens -->
+          <table class="table custom-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Product Code</th>
+                <th>UIN Code</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Private car package policy</td>
+                <td>3001</td>
+                <td>IRDAN115RP0017V01200102</td>
+              </tr>
+              <tr class="highlight-row">
+                <td>Stand-alone own damage</td>
+                <td>3001/O</td>
+                <td>IRDAN115RP0010V01201920</td>
+              </tr>
+              <tr>
+                <td>Private car liability policy</td>
+                <td>3001/A</td>
+                <td>IRDAN115RP0012V01200102</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="footer-logo mb-2">
+              <img src="./assets/Group 60.png" alt="ICICI Lombard Logo" />
+            </div>
+            <p class="footer-contact">
+              <strong>ICICI Lombard General Insurance Company Limited,</strong
+              ><br />
+              ICICI Lombard House, 414, Veer Savarkar Marg, Near Siddhi Vinayak
+              Temple, Prabhadevi, Mumbai - 400025.<br />
+              Email:
+              <a href="mailto:customersupport@icicilombard.com"
+                >customersupport@icicilombard.com</a
+              ><br />
+              Fax no: 022 61961323
+            </p>
+
+            <div class="social-icons">
+              <a href="#"><img src="./assets/Group 3.png" /></a>
+              <a href="#"><img src="./assets/Group 7.svg" /></a>
+              <a href="#"><img  src="./assets/Twitter-X-New-Logo-Vector-2 1.svg"/></a>
+              <a href="#"><img src="./assets/Group 3 (1).png"/></i></a>
+              <a href="#"><img src="./assets/Group 3.svg"/></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <p class="footer-contact">
+              ICICI Lombard General Insurance Ltd. is one of the largest private
+              sector general insurance companies in India, offering insurance
+              coverage for motor, health, travel, home, student travel, and
+              more. Policies can be purchased and renewed online as well.
+              Immediate issuance of policy copy online.
+            </p>
+            <p class="footer-contact">
+              ICICI trade logo displayed above belongs to ICICI Bank and is used
+              by ICICI Lombard GIC Ltd. under license. The advertisement
+              contains only an indication of cover offered. For more details on
+              risk factors, terms, conditions, and exclusions, please read the
+              sales brochure carefully before concluding a sale. CIN:
+              L67200MH2000PLC129408
+            </p>
+
+            <div class="footer-line"></div>
+            <div class="group-companies">
+              Group companies
+              <select>
+                <option>Group companies</option>
+                <option>ICICI Bank</option>
+                <option>ICICI Prudential Life</option>
+                <option>ICICI Securities</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
