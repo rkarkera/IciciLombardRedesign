@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Insurance - ICICI Lombard</title>
+    <title>ICICI Lombard Task</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -26,9 +26,9 @@
   <body>
     <!-- Header -->
     <header class="header-top sticky-top">
-      <div class="container-fluid">
-        <div class="row align-items-center mb-3">
-          <div class="col-md-6 d-flex mb-3 mb-lg-0">
+      <div class="container-fluid mt-lg-2">
+        <div class="row align-items-center mb-3 head">
+          <div class="col-md-6 d-flex mb-3 mb-lg-0 ">
             <div class="col-auto border-end border-dark ps-3">
               <img src="./assets/Group (2).png" />
               <a href="" class="text-black">1800 2666</a>
@@ -128,83 +128,88 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link text-white" href="#">Car Insurance</a>
+                <a class="nav-link text-white" href="#">Car Insurance <img src="/assets/Fill 11.png" alt="icon"></i></a>
                 <a class="nav-link text-white" href="#"
-                  >Two Wheeler Insurance</a
-                >
-                <a class="nav-link text-white" href="#">Health Insurance</a>
-                <a class="nav-link text-white" href="#">Other Insurance</a>
-                <a class="nav-link text-white" href="#">Claims</a>
+                  >Two Wheeler Insurance</a>
+                <a class="nav-link text-white" href="#">Health Insurance <img src="/assets/Fill 11.png" alt="icon"/></a>
+                <a class="nav-link text-white" href="#">Other Insurance <img src="/assets/Fill 11.png" alt="icon"/></a>
+                <a class="nav-link text-white" href="#">Claims&nbsp <img src="/assets/Fill 11.png" alt="icon"/></a>
               </div>
-              <a href="#" class="btn btn-outline-light ms-auto">Login</a>
+              <a href="#" class="nav-link text-white ms-auto">Login <img src="/assets/Fill 12.svg" alt="icon"/></a>
             </div>
           </div>
         </nav>
       </div>
     </header>
+
     <!-- Main Section -->
-    <section class="main-section py-5">
+    <section class="main-section py-5 mas">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-4">
-            <h1 class="display-4 fw-bold" style="color: black;">>Car Insurance</h1>
+        <div class="row align-items-center ">
+          <div class="col-md-4 ">
+            <h1 class="display-4 fw-bold" style="color: black;">Car Insurance</h1>
             <h2 class="h3 mb-3">Prices starting at just ₹2,094/yr</h2>
             <p class="text-muted small">
               This amount refers to the TP rates only
             </p>
             <ul class="list-unstyled mt-4">
-              <li class="mb-3 d-flex align-items-center">
-                <img src="./assets/Frame.png" alt="Icon" class="me-2" />
+              <li class="mb-3 d-flex align-items-center custom-li ">
+                <img src="./assets/Repairs 1.png" alt="Icon" class="me-2" />
                 <span
-                  >Doorstep Cashless Repairs*
-                  <span class="badge bg-orange text-white">NEW</span></span
+                  >Doorstep Cashless Repairs
+                  <span><img src="/assets/Group 5754.png"/></span></span
                 >
               </li>
-              <li class="mb-3 d-flex align-items-center">
+              <li class="mb-3 d-flex align-items-center custom-li pl-2">
                 <img src="./assets/Asset 34.png" alt="Icon" class="me-2" />
                 <span>₹15 lakh Personal Accident Cover</span>
               </li>
-              <li class="mb-3 d-flex align-items-center">
-                <img src="./assets/Repairs 1.png" alt="Icon" class="me-2" />
+              <li class="mb-3 d-flex align-items-center custom-li ">
+                <img src="./assets/Frame.png" alt="Icon" class="me-2" />
                 <span>Drive less? Pay less with PAYD add-on</span>
               </li>
             </ul>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-md-4  mb-5 mb-lg-0 mr-5 ">
             <img
               src="./assets/Car.png"
               alt="Car Image"
-              class="img-fluid mt-4"
+              class="img-fluid mt-5"
             />
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4  ml-lg-5  form">
             <div class="card p-4">
-              <form>
-                <div class="mb-3">
+              <form id="quoteForm">
+                <div class="mb-4">
                   <input
                     type="text"
                     class="form-control"
+                    id="carReg"
                     placeholder="Car registration no."
+                    maxlength="10"
                   />
+                  <small class="text-danger" id="carRegError"></small>
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
+                    id="mobile"
                     placeholder="Mobile no."
                   />
+                  <small class="text-danger" id="mobileError"></small>
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
                     type="email"
                     class="form-control"
+                    id="email"
                     placeholder="Email"
                   />
+                  <small class="text-danger" id="emailError"></small>
                 </div>
-                <button type="submit" class="btn btn-orange w-100">
-                  Get Quote
-                </button>
-                <div class="text-end mt-2">
+                <button type="submit" class="btn btn-orange w-100">Get Quote</button>
+                <div class="text-start mt-2">
                   <a href="#" class="text-orange small">Retrieve quote</a>
                 </div>
                 <div class="form-check mt-3">
@@ -213,12 +218,10 @@
                     I agree to the terms and conditions
                   </label>
                 </div>
-              </form>
+              </form>  
             </div>
             <div class="text-center">
-              <a href="#" class="btn btn-outline-orange"
-                >Renew your ICICI Lombard policy</a
-              >
+              <a href="#" class="renew-policy">Renew your ICICI Lombard policy</a>
             </div>
           </div>
         </div>
@@ -231,15 +234,17 @@
         <h2 class="text-center mb-4 text-black">Why our customers love us?</h2>
         <p class="text-center text-muted mb-5">And, we think you will too.</p>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-md-3">
             <div class="card p-4 text-center d-flex align-items-center">
               <div class="d-flex align-items-center gap-2">
-                <img
+                <div class="mr-5">
+                  <img
                   src="./assets/location.png"
                   alt="Icon"
                   width="30"
                   height="30"
                 />
+                </div>
                 <div>
                   <h5 class="mb-0 text-orange small">6100+ cashless garages</h5>
                   <span class="text-muted small"
@@ -249,7 +254,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-md-3">
             <div class="card p-4 text-center d-flex align-items-center">
               <div class="d-flex align-items-center gap-2">
                 <img
@@ -267,7 +272,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-md-3">
             <div class="card p-4 text-center d-flex align-items-center">
               <div class="d-flex align-items-center gap-2">
                 <img
@@ -291,8 +296,8 @@
       </div>
     </section>
     <!-- car insurance  -->
-    <section class="ins-section py-5 bg-light">
-      <div class="container">
+    <section class="ins-section py-5" style="background-color: white;">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-6">
             <img src="./assets/Group (1).png" style="width: 100%" />
@@ -457,7 +462,7 @@
     <!-- policy card section -->
     <section
       class="insurance-guide-section py-5"
-      style="background-color: #1e3a8a"
+      style="background-color: #00305B"
     >
       <div class="container">
         <h2 class="text-center mb-5 text-white">
@@ -465,40 +470,45 @@
         </h2>
         <div class="row g-4 justify-content-center">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="guide-card p-4 text-center">
-              <h3 class="text-orange mb-3">1</h3>
-              <h4 class="text-white mb-2">What kind of coverage you need:</h4>
-              <p class="text-white">
-                Choose from options like liability, collision, comprehensive, or
-                personal injury protection.
-              </p>
+            <div class="guide-card p-4 text-center d-flex">
+              <div class="mr-2"><h3 class="text-orange">1</h3></div>
+              <div><h4 class="text-white mb-2">What kind of coverage you need:</h4>
+                <p class="text-white">
+                  Choose from options like liability, collision, comprehensive, or
+                  personal injury protection.
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="guide-card p-4 text-center">
-              <h3 class="text-orange mb-3">2</h3>
-              <h4 class="text-white mb-2">How much your car is worth:</h4>
-              <p class="text-white">
-                Make sure the cost of your insurance policy matches your
-                vehicle's value.
-              </p>
+            <div class="guide-card p-4 text-center d-flex">
+              <div class="mr-2"><h3 class="text-orange mb-3">2</h3></div>
+              <div><h4 class="text-white mb-2">How much your car is worth:</h4>
+                <p class="text-white">
+                  Make sure the cost of your insurance policy matches your
+                  vehicle's value.
+                </p></div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="guide-card p-4 text-center">
-              <h3 class="text-orange mb-3">3</h3>
-              <h4 class="text-white mb-2">How you drive:</h4>
+            <div class="guide-card p-4 text-center d-flex">
+              <div class="m-2">
+                <h3 class="text-orange mb-3">3</h3>
+              </div>
+              <div >
+                <h4 class="text-white mb-2 ">How you drive:</h4>
               <p class="text-white">
                 Your driving habits, such as how often you drive and what type
                 of driving you do, can affect the cost of the insurance if you
                 opt for pay-as-you-drive or pay-how-you-drive policies.
               </p>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="guide-card p-4 text-center">
-              <h3 class="text-orange mb-3">4</h3>
-              <h4 class="text-white mb-2">
+            <div class="guide-card p-4 text-center d-flex">
+              <div class="mr-2"><h3 class="text-orange mb-3">4</h3></div>
+              <div><h4 class="text-white mb-2">
                 How much you're willing to pay out of pocket:
               </h4>
               <p class="text-white">
@@ -506,28 +516,30 @@
                 with. In case of an accident, if you're not comfortable spending
                 money from your own pocket for your car repairs, opt for the Own
                 Damage cover instead of a Third-party policy.
-              </p>
+              </p></div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="guide-card p-4 text-center">
-              <h3 class="text-orange mb-3">5</h3>
-              <h4 class="text-white mb-2">Where you live:</h4>
-              <p class="text-white">
-                Car insurance online costs can differ based on traffic and crime
-                in your area.
-              </p>
+            <div class="guide-card p-4 text-center d-flex">
+              <div class="mr-2"><h3 class="text-orange mb-3">5</h3></div>
+              <div> <h4 class="text-white mb-2">Where you live:</h4>
+                <p class="text-white">
+                  Car insurance online costs can differ based on traffic and crime
+                  in your area.
+                </p></div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="guide-card p-4 text-center">
-              <h3 class="text-orange mb-3">6</h3>
-              <h4 class="text-white mb-2">Discounts:</h4>
+            <div class="guide-card p-4 text-center d-flex">
+              <div class="mr-2"><h3 class="text-orange mb-3">6</h3></div>
+              <div class="ml-5">
+                <h4 class="text-white mb-2">Discounts:</h4>
               <p class="text-white">
                 Look for discounts you might be eligible for, such as discounts
                 for having multiple policies, being a safe driver, or driving
                 less.
               </p>
+              </div>
             </div>
           </div>
         </div>
@@ -543,18 +555,14 @@
 
     <!-- included section -->
     <section class="control-section py-5">
-      <div class="container mt-5">
-        <h2 class="text-center fw-bold">What’s included and what’s not?</h2>
-
-        <!-- Tabs -->
+      <div class="container mt-5" >
+        <h2 class="text-center fw-bold text-black">What’s included and what’s not?</h2>
         <div class="tab-container d-flex text-center mt-4">
           <a href="#" class="active" onclick="showTab(event, 'inclusions')"
             >Inclusions</a
           >
           <a href="#" onclick="showTab(event, 'exclusions')">Exclusions</a>
         </div>
-
-        <!-- Inclusions Content -->
         <div id="inclusions" class="tab-content">
           <p class="fw-bold">What’s included:</p>
           <div class="included-list">
@@ -590,8 +598,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Policy Documents -->
         <div class="policy-docs">
           <p class="fw-bold mb-0">Policy documents:</p>
           <a href="#">Private car package policy wordings</a>
@@ -615,7 +621,7 @@
         </h2>
 
         <div class="row g-4 mt-5">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="custom-card selected d-flex align-items-start">
               <div class="image-container">
                 <img
@@ -633,7 +639,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="custom-card d-flex align-items-start">
               <div class="image-container">
                 <img src="./assets/add ons icn.png" alt="Add-ons" />
@@ -647,7 +653,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="custom-card d-flex align-items-start">
               <div class="image-container">
                 <img
@@ -664,7 +670,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="custom-card d-flex align-items-start">
               <div class="image-container">
                 <img src="./assets/right insured_icn.png" alt="IDV" />
@@ -682,13 +688,58 @@
       </div>
     </section>
 
+    <!-- insurance cal tab -->
+     <section class="insurance-cal-section py-5">
+      <div class="main-wrapper">
+        <h1>How is car insurance premium calculated?</h1>
+        <div class="info-grid">
+            <div class="premium-details">
+                <h2>YOUR CAR PREMIUM INCLUDES THREE MAJOR COMPONENTS:</h2>
+                <p><strong>1. Third-party liability premium</strong> – this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your car’s cubic capacity.</p>
+                <table class="capacity-table">
+                    <tr>
+                        <th>Cubic capacity</th>
+                        <th>Premium with effect from 1st June 2022 (Rs)</th>
+                    </tr>
+                    <tr>
+                        <td>Not exceeding 1000 cc</td>
+                        <td>₹2,094</td>
+                    </tr>
+                    <tr>
+                        <td>Exceeding 1000 cc but not exceeding 1500 cc</td>
+                        <td>₹3,416</td>
+                    </tr>
+                    <tr>
+                        <td>Exceeding 1500 cc</td>
+                        <td>₹7,897</td>
+                    </tr>
+                </table>
+                <p><strong>2. Own damage premium</strong> – this is calculated as IDV X [Tariff Rate] – [Discounts] + Add on Covers</p>
+                <p><strong>3. Personal accident cover premium</strong> + Additional covers</p>
+            </div>
+            <div class="factors-list">
+                <h2>FACTORS THAT AFFECT THESE THREE COMPONENTS AND YOUR FINAL CAR INSURANCE PRICE, INCLUDE:</h2>
+                <ul>
+                    <li><strong>IDV</strong> – IDV is the maximum amount you can claim under your policy. The higher your car’s market value, the higher your IDV and premium will be.</li>
+                    <li><strong>Make and model</strong> – Higher-end models are insured at a higher price, simply because the cost of repairs/replacement for such vehicles is higher.</li>
+                    <li><strong>Fuel type</strong> – Repairing petrol-fueled cars is cheaper than those that run on diesel and CNG. As a result, they are also less expensive to insure.</li>
+                    <li><strong>Year of manufacture</strong> – Certain new cars may be costly to cover since their spare parts may not be available yet.</li>
+                    <li><strong>Location</strong> – Since urban areas have denser traffic, there’s a greater probability of accidental damages. Thus, your premium may vary depending on your location.</li>
+                    <li><strong>Claim history</strong> – If you have made no car insurance claims in the past year, you can gain a No Claim Bonus on your premium.</li>
+                    <li><strong>Add-ons</strong> – A small cost will be in your premium for the add-ons you pick.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     </section>
+
     <!-- question tab -->
     <section class="question-tab py-5" style="background-color: #f8f6f6">
       <div class="container py-5">
         <h2 class="page-title">
           Get answers to common questions about car insurance policy
         </h2>
-        <ul class="nav nav-tabs" id="insuranceTabs" role="tablist">
+        <div class="px-5"><ul class="nav nav-tabs text-left" id="insuranceTabs" role="tablist">
           <li class="nav-item" role="presentation">
             <a
               class="nav-link active"
@@ -835,7 +886,6 @@
             </dl>
           </div>
 
-          <!-- Cover Tab -->
           <div
             class="tab-pane fade"
             id="cover"
@@ -845,7 +895,6 @@
             <p>Content for Cover tab will be here.</p>
           </div>
 
-          <!-- Premium Tab -->
           <div
             class="tab-pane fade"
             id="premium"
@@ -855,7 +904,6 @@
             <p>Content for Premium tab will be here.</p>
           </div>
 
-          <!-- Claims Tab -->
           <div
             class="tab-pane fade"
             id="claims"
@@ -864,8 +912,6 @@
           >
             <p>Content for Claims tab will be here.</p>
           </div>
-
-          <!-- Policy Tab -->
           <div
             class="tab-pane fade"
             id="policy"
@@ -875,6 +921,7 @@
             <p>Content for Policy tab will be here.</p>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
@@ -1067,6 +1114,7 @@
         </div>
     </div>
      </section>
+
     <!-- table section -->
     <section class="table-section py-3">
       <div class="container">
@@ -1162,5 +1210,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
